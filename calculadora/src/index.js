@@ -1,6 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import Calculator from './main/Calculator';
+import ReactDOM from 'react-dom'
+import React from 'react'
+import './index.css'
+import Calculator from './main/Calculator'
 
-ReactDOM.render(<Calculator/> ,document.getElementById('root'));
+
+const el = document.getElementById('root')
+ReactDOM.render(
+    <div>
+        <h1>Calculadora</h1>
+        <Calculator></Calculator>
+    </div>
+    ,
+    el)
